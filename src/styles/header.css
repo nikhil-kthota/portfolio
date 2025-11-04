@@ -1,0 +1,98 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  height: 50px;
+  position: relative;
+}
+
+.header-link {
+  color: #ffffff;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: all 0.18s ease;
+  font-size: 1.25rem;
+  font-weight: 1000;
+  letter-spacing: 0.01em;
+  padding: 0.5rem 0.75rem;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
+.email-link {
+  text-align: left;
+  justify-self: start;
+}
+
+.github-link {
+  text-align: center;
+  justify-self: center;
+}
+
+.linkedin-link {
+  text-align: right;
+  justify-self: end;
+}
+
+.header-link:hover {
+  color: #f1f1f1;
+  text-underline-offset: 6px;
+}
+
+.short-text {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .full-text {
+    display: none;
+  }
+  .short-text {
+    display: inline;
+  }
+  .header-link {
+    font-size: 1.25rem;
+    padding: 0.5rem 0.6rem;
+    text-align: center;
+    justify-self: center;
+  }
+  .header-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-container {
+    padding: 0 0.75rem;
+    height: 45px;
+  }
+
+  .header-link {
+    font-size: 1.25rem;
+    padding: 0.35rem 0.5rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .header-container {
+    padding: 0.5rem;
+  }
+  
+  .header-link {
+    font-size: 1.25rem;
+    padding: 0.25rem 0.4rem;
+  }
+}
