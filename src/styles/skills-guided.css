@@ -1,0 +1,35 @@
+.skills-guided-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3vh;
+    padding: 2vh 0;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+}
+
+.guided-skill-item {
+    font-size: clamp(1rem, 3vw, 2.5rem);
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.1;
+    margin: 0;
+    padding: 0;
+    cursor: default;
+
+    will-change: transform, opacity, filter;
+    -webkit-font-smoothing: antialiased;
+}
+
+@media (max-width: 768px) {
+    .skills-guided-container {
+        gap: 2vh;
+    }
+
+    .guided-skill-item {
+        font-size: clamp(1.8rem, 6vw, 3.5rem);
+    }
+}

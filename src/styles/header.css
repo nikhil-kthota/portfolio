@@ -48,8 +48,8 @@
 }
 
 .header-link:hover {
-  color: #f1f1f1;
   text-underline-offset: 6px;
+  text-shadow: 0 0 15px rgba(229, 226, 222, 0.6);
 }
 
 .short-text {
@@ -60,15 +60,18 @@
   .full-text {
     display: none;
   }
+
   .short-text {
     display: inline;
   }
+
   .header-link {
     font-size: 1.25rem;
     padding: 0.5rem 0.6rem;
     text-align: center;
     justify-self: center;
   }
+
   .header-container {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -90,9 +93,19 @@
   .header-container {
     padding: 0.5rem;
   }
-  
+
   .header-link {
     font-size: 1.25rem;
     padding: 0.25rem 0.4rem;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }
