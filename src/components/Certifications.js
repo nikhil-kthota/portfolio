@@ -13,7 +13,7 @@ const certificationsData = [
         issuer: "Stanford University, DeepLearning.AI, Coursera",
         date: "Apr 2025",
         link: "https://coursera.org/verify/specialization/QGKMX2OE7QZW",
-        image: "/assets/certifications/machine-learning.png"
+        image: process.env.PUBLIC_URL + "/assets/certifications/machine-learning.png"
     },
     {
         id: 2,
@@ -21,7 +21,7 @@ const certificationsData = [
         issuer: "IBM, Coursera",
         date: "Dec 2024",
         link: "https://www.coursera.org/account/accomplishments/verify/W2OABX8BRF4L",
-        image: "/assets/certifications/prompt-engineering.png"
+        image: process.env.PUBLIC_URL + "/assets/certifications/prompt-engineering.png"
     },
     {
         id: 3,
@@ -29,7 +29,7 @@ const certificationsData = [
         issuer: "IIIT Bangalore, NPTEL",
         date: "Nov 2025",
         link: "https://archive.nptel.ac.in/content/noc/NOC25/SEM2/Ecertificates/106/noc25-cs113/Course/NPTEL25CS113S65820327210266831.pdf",
-        image: "/assets/certifications/software-testing.png"
+        image: process.env.PUBLIC_URL + "/assets/certifications/software-testing.png"
     },
     {
         id: 4,
@@ -37,7 +37,7 @@ const certificationsData = [
         issuer: "Cisco",
         date: "Dec 2024",
         link: "https://www.credly.com/go/m87dBwq3",
-        image: "/assets/certifications/data-analytics.png"
+        image: process.env.PUBLIC_URL + "/assets/certifications/data-analytics.png"
     }
 ];
 
