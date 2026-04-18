@@ -6,12 +6,12 @@ import '../styles/sections.css';
 const projectsData = [
     {
         id: 0,
-        title: "Collaborative Learning System",
-        period: "Dec 2025 - Present",
-        description: "A collaborative learning solution designed to enhance real-time student collaboration. Features group-based chat, video communication, shared resources, real-time file editing, and AI-assisted learning. Built with React.js, Node.js, Express, and Supabase for scalable authentication and file storage.",
-        skills: ["React.js", "Node.js", "Express", "Supabase", "Real-time Collaboration", "WebSockets"],
-        link: "#",
-        status: "working"
+        title: "CoLearn",
+        period: "Dec 2025 - Apr 2026",
+        description: "CoLearn is a collaborative learning system built as a central space for students to study together more effectively. It brings real-time chat, file sharing, collaborative coding and AI study tools into one workspace so teams can focus on learning without having to jump between different apps. Built with React (Vite) and Lucide React. Backend uses Node.js, Express and Socket.IO. Supabase handles auth/storage. AI via Mistral AI & Groq. Deployed on Render & GitHub Pages.",
+        skills: ["React.js", "Node.js", "Express", "Supabase", "Socket.io", "PostgreSQL", "Full Stack Development"],
+        link: "https://nikhil-kthota.github.io/collaborative-learning/#/",
+        repo: "https://github.com/nikhil-kthota/collaborative-learning"
     },
     {
         id: 1,
@@ -253,7 +253,7 @@ const Projects = () => {
                                         pointerEvents: 'none',
                                         fontFamily: 'monospace'
                                     }}>
-                                        {activeProject.period.split(' ')[1] || activeProject.period.split('-')[0].trim().split(' ')[1]}
+                                        {activeProject.period.split(' ').pop()}
                                     </div>
                                 </motion.div>
                             </AnimatePresence>
